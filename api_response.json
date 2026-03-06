@@ -1,0 +1,396 @@
+﻿{
+    "result":  {
+                   "id":  "202823",
+                   "merchantCategoryId":  "0312010903",
+                   "name":  "Estuco Plástico Interior/Exterior Para Techo/Paredes 5 Galones Topex",
+                   "brandName":  "Topex",
+                   "currentVariant":  "202823",
+                   "description":  "Estuco Plástico 5 Galones Paredes/Techos Interior y Exterior",
+                   "longDescription":  "\u003ch4 style=\"text-align: left;\"\u003e\u003cspan style=\"color: #0000ff;\"\u003e\u003ca style=\"color: #0000ff;\" href=\"https://storage.googleapis.com/media-service-documents/soco/FDS - ESTUCO PLASTICO TOPEX.pdf\" target=\"_blank\" rel=\"noopener\"\u003eDé Click y Descargue el Certificado\u003c/a\u003e\u003c/span\u003e\u003c/h4\u003e\u003cbr /\u003e\u003ch2 style=\"text-align: center;\"\u003e\u003cspan style=\"color: #ff0000;\"\u003e\u003ca style=\"color: #ff0000;\" href=\"https://assets.contentstack.io/v3/assets/blt2f8082df109cfbfb/blt8c22b61c6f59c3ae/658b2d17dc766244aa7e9e66/202823_-_ESTUCO_PLASTICO_5_GALON_30kg_TOPEX.pdf\" target=\"_blank\u0026quot;\" rel=\"noopener\"\u003e\u003cstrong\u003eVER FICHA TÉCNICA\u003c/strong\u003e\u003c/a\u003e\u003c/span\u003e\u003c/h2\u003e\u003cbr /\u003eMasilla acrílica de preacabado, lista para usar, desarrollada para tratar las superficies que posteriormente serán pintadas. Mejora las características de textura, apariencia y adherencia de la pintura, y puede utilizarse en aplicaciones interiores o exteriores, siempre y cuando se recubra con una pintura adecuada. \n\u003cbr /\u003e\u003ciframe width=\"560\" height=\"315\" src=\"https://youtu.be/LeSMkbtvmsw\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen\u003e\u003c/iframe\u003e\u003cbr /\u003e",
+                   "productType":  "Regular",
+                   "primaryVariantId":  "202823",
+                   "displaySeoPage":  false,
+                   "mediaList":  [
+
+                                 ],
+                   "isPublished":  true,
+                   "defaultParentCategoryId":  "cat4410006",
+                   "attributes":  [
+                                      {
+                                          "name":  "is_marketplace_product",
+                                          "values":  [
+                                                         "false"
+                                                     ],
+                                          "group":  "BUCore"
+                                      },
+                                      {
+                                          "name":  "is_domestic",
+                                          "values":  [
+                                                         "false"
+                                                     ],
+                                          "group":  "ProductClass"
+                                      },
+                                      {
+                                          "name":  "is_multi_product",
+                                          "values":  [
+                                                         "true"
+                                                     ],
+                                          "group":  "BUCore"
+                                      },
+                                      {
+                                          "name":  "new_icon_validity_days",
+                                          "values":  [
+                                                         "0"
+                                                     ],
+                                          "group":  "BUCore"
+                                      },
+                                      {
+                                          "name":  "Tipo",
+                                          "values":  [
+                                                         "Estucos"
+                                                     ],
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Ancho",
+                                          "values":  [
+                                                         "30"
+                                                     ],
+                                          "order":  10,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Alto",
+                                          "values":  [
+                                                         "38"
+                                                     ],
+                                          "order":  11,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Largo",
+                                          "values":  [
+                                                         "30"
+                                                     ],
+                                          "order":  12,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Tipo de mezcla",
+                                          "values":  [
+                                                         "Pasta Muro"
+                                                     ],
+                                          "order":  110,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Lavable",
+                                          "values":  [
+                                                         "No"
+                                                     ],
+                                          "order":  250,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Contenido",
+                                          "values":  [
+                                                         "30 kg"
+                                                     ],
+                                          "order":  400,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Rendimiento",
+                                          "values":  [
+                                                         "4 ± 1 m2 /gal"
+                                                     ],
+                                          "order":  400,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Secado final",
+                                          "values":  [
+                                                         "24 horas"
+                                                     ],
+                                          "order":  400,
+                                          "group":  "AttributesSortedMap"
+                                      },
+                                      {
+                                          "name":  "Garantía",
+                                          "values":  [
+                                                         "1 año"
+                                                     ],
+                                          "order":  800,
+                                          "group":  "AttributesSortedMap"
+                                      }
+                                  ],
+                   "defaultImageUrl":  "Falabella/202823_1",
+                   "accumulativePoints":  [
+
+                                          ],
+                   "variants":  [
+                                    {
+                                        "id":  "202823",
+                                        "name":  "Estuco Plástico Interior/Exterior Para Techo/Paredes 5 Galones Topex",
+                                        "badges":  {
+                                                       "discountBadge":  {
+                                                                             "type":  "DISCOUNT",
+                                                                             "value":  "-10%"
+                                                                         },
+                                                       "eventBadge":  {
+                                                                          "type":  "EVENT_COLLECTION",
+                                                                          "value":  "https://images.sodimac.com/v3/assets/blt2f8082df109cfbfb/bltddf552d90076cf52/6615a63e1952f0c89dfc1666/Badge_FreeShiping_New.svg",
+                                                                          "name":  "Envio gratis"
+                                                                      }
+                                                   },
+                                        "description":  "Estuco Plástico 5 Galones Paredes/Techos Interior y Exterior",
+                                        "longDescription":  "",
+                                        "productType":  "Regular",
+                                        "mediaList":  [
+
+                                                      ],
+                                        "attributes":  [
+                                                           {
+                                                               "name":  "provider_code",
+                                                               "values":  [
+                                                                              ""
+                                                                          ],
+                                                               "group":  "BackendInfo"
+                                                           },
+                                                           {
+                                                               "name":  "provider_id",
+                                                               "values":  [
+                                                                              "3463"
+                                                                          ],
+                                                               "group":  "BackendInfo"
+                                                           },
+                                                           {
+                                                               "name":  "backoffice_status",
+                                                               "values":  [
+                                                                              "ACTIVO"
+                                                                          ],
+                                                               "group":  "BUCore"
+                                                           },
+                                                           {
+                                                               "name":  "provider_name",
+                                                               "values":  [
+                                                                              "CORLANC S.A.S"
+                                                                          ],
+                                                               "group":  "BackendInfo"
+                                                           },
+                                                           {
+                                                               "name":  "Tipo",
+                                                               "values":  [
+                                                                              "Estucos"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Ancho",
+                                                               "values":  [
+                                                                              "30"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Alto",
+                                                               "values":  [
+                                                                              "38"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Largo",
+                                                               "values":  [
+                                                                              "30"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Tipo de mezcla",
+                                                               "values":  [
+                                                                              "Pasta Muro"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Lavable",
+                                                               "values":  [
+                                                                              "No"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Contenido",
+                                                               "values":  [
+                                                                              "30 kg"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Rendimiento",
+                                                               "values":  [
+                                                                              "4 ± 1 m2 /gal"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Secado final",
+                                                               "values":  [
+                                                                              "24 horas"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           },
+                                                           {
+                                                               "name":  "Garantía",
+                                                               "values":  [
+                                                                              "1 año"
+                                                                          ],
+                                                               "group":  "AttributesSortedMap"
+                                                           }
+                                                       ],
+                                        "bundleLinks":  [
+
+                                                        ],
+                                        "availability":  [
+                                                             {
+                                                                 "hasStock":  true,
+                                                                 "shippingType":  "homeDelivery"
+                                                             },
+                                                             {
+                                                                 "hasStock":  true,
+                                                                 "shippingType":  "pickupInStore"
+                                                             },
+                                                             {
+                                                                 "hasStock":  true,
+                                                                 "shippingType":  "buyAtStore"
+                                                             }
+                                                         ],
+                                        "price":  [
+                                                      {
+                                                          "label":  "",
+                                                          "price":  "85.900",
+                                                          "symbol":  "$",
+                                                          "type":  "INTERNET",
+                                                          "unit":  "und"
+                                                      },
+                                                      {
+                                                          "label":  "",
+                                                          "boxCoverage":  "30.000",
+                                                          "price":  "2.863,33",
+                                                          "symbol":  "$",
+                                                          "type":  "M2",
+                                                          "unit":  "KILOGRAMO"
+                                                      },
+                                                      {
+                                                          "label":  "Normal",
+                                                          "price":  "95.900",
+                                                          "symbol":  "$",
+                                                          "type":  "NORMAL",
+                                                          "unit":  "und"
+                                                      }
+                                                  ],
+                                        "images":  [
+                                                       {
+                                                           "name":  "202823",
+                                                           "url":  "https://media.falabella.com/sodimacCO/202823/public"
+                                                       },
+                                                       {
+                                                           "name":  "202823_01",
+                                                           "url":  "https://media.falabella.com/sodimacCO/202823_01/public"
+                                                       },
+                                                       {
+                                                           "name":  "202823_1",
+                                                           "url":  "https://media.falabella.com/sodimacCO/202823_1/public"
+                                                       },
+                                                       {
+                                                           "name":  "202823_12",
+                                                           "url":  "https://media.falabella.com/sodimacCO/202823_12/public"
+                                                       },
+                                                       {
+                                                           "name":  "202823_2",
+                                                           "url":  "https://media.falabella.com/sodimacCO/202823_2/public"
+                                                       }
+                                                   ]
+                                    }
+                                ],
+                   "warrantyDetails":  [
+
+                                       ],
+                   "serviceDetails":  [
+
+                                      ],
+                   "bundleProducts":  [
+
+                                      ],
+                   "linkedProducts":  [
+                                          {
+                                              "type":  "RelatedProduct",
+                                              "productList":  [
+                                                                  {
+                                                                      "id":  "15743",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "51113",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "299545",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "326486",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "594848",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "299545",
+                                                                      "type":  "product"
+                                                                  },
+                                                                  {
+                                                                      "id":  "323995",
+                                                                      "type":  "product"
+                                                                  }
+                                                              ]
+                                          }
+                                      ],
+                   "aggregatedBundlePrice":  {
+
+                                             },
+                   "breadcrumbs":  [
+                                       {
+                                           "name":  "Pisos, Pinturas y Terminaciones",
+                                           "categoryId":  "cat940033",
+                                           "isRootCategory":  true
+                                       },
+                                       {
+                                           "name":  "Pinturas",
+                                           "categoryId":  "cat10462",
+                                           "isRootCategory":  false
+                                       },
+                                       {
+                                           "name":  "Limpieza, sellado y lijado de superficies",
+                                           "categoryId":  "cat4410006",
+                                           "isRootCategory":  false
+                                       },
+                                       {
+                                           "name":  "Estuco Plástico Interior/Exterior Para Techo/Paredes 5 Galones Topex",
+                                           "categoryId":  "cat4410006",
+                                           "isRootCategory":  false
+                                       }
+                                   ],
+                   "metaKeywords":  [
+
+                                    ],
+                   "calculatorConfig":  {
+
+                                        },
+                   "images":  [
+
+                              ]
+               }
+}

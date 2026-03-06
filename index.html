@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Productos - Homecenter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Phosphor Icons for modern minimalist icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Wall -->
+    <div id="login-wall" class="login-wall">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="ph ph-shield-check size-48" style="color: var(--brand-primary); margin-bottom: 1rem;"></i>
+                <h2>Acceso Restringido</h2>
+                <p>Ingresa tu identificación de empleado para continuar.</p>
+            </div>
+            <div class="login-body">
+                <input type="text" id="emp-id-input" placeholder="Ej: 1018234129" class="login-input">
+                <button id="login-btn" class="btn btn-primary login-btn">
+                    Ingresar <i class="ph ph-sign-in"></i>
+                </button>
+                <div id="login-error" class="login-error hidden">
+                    Identificación incorrecta o no autorizada.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container hidden" id="app-wrapper">
+        <!-- Header -->
+        <header class="topbar">
+            <div class="header-left">
+                <div class="logo-icon">
+                    <i class="ph ph-cube"></i>
+                </div>
+                <div>
+                    <h1>Gestor de Productos</h1>
+                    <div id="welcome-message" style="color: var(--brand-primary); font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem;"></div>
+                    <p class="subtitle"><span id="product-count">0</span> productos registrados</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" id="sku-input" placeholder="Ingresar código...">
+                </div>
+                <button class="btn btn-secondary" id="delete-btn" style="display: none; color: #ef4444; border-color: #ef4444;">
+                    <i class="ph ph-trash"></i> Eliminar
+                </button>
+                <button class="btn btn-secondary" id="export-btn">
+                    <i class="ph ph-download-simple"></i> Exportar
+                </button>
+                <button class="btn btn-primary" id="add-btn">
+                    <i class="ph ph-plus"></i> Agregar
+                </button>
+                <button class="btn btn-primary" id="open-add-btn" style="background-color: #3b82f6;">
+                    <i class="ph ph-list-plus"></i> Masivo
+                </button>
+            </div>
+        </header>
+
+        <!-- Summary Cards -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon icon-dark-green">
+                    <i class="ph ph-cube"></i>
+                </div>
+                <div class="stat-info">
+                    <p>Total productos</p>
+                    <h2 id="stat-total">0</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-dark-green">
+                    <i class="ph ph-currency-dollar"></i>
+                </div>
+                <div class="stat-info">
+                    <p>Valor promedio</p>
+                    <h2 id="stat-avg-value">$ 0</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-yellow">
+                    <i class="ph ph-warehouse"></i>
+                </div>
+                <div class="stat-info">
+                    <p>Unidades en stock</p>
+                    <h2 id="stat-stock">0</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon icon-gray">
+                    <i class="ph ph-wrench"></i>
+                </div>
+                <div class="stat-info">
+                    <p>Con servicio</p>
+                    <h2 id="stat-service">0</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Table Area -->
+        <section class="table-section">
+            <div class="table-header">
+                <h2>Lista de productos</h2>
+            </div>
+            <div class="table-container">
+                <table id="product-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40px;"><input type="checkbox" id="select-all"></th>
+                            <th>Codigo</th>
+                            <th>Producto</th>
+                            <th>Categoria</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Servicio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        <!-- Rows will be injected here via JS -->
+                    </tbody>
+                </table>
+                <div class="empty-state" id="empty-state">
+                    <i class="ph ph-magnifying-glass size-48"></i>
+                    <p>No hay productos registrados. Ingresa un código arriba para buscar y agregar.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Product Modal -->
+    <div id="add-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px;">
+            <span class="close-modal add-close">&times;</span>
+            <div class="modal-body">
+                <h2 style="margin-bottom: 1rem;">Agregar Productos</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.875rem;">Ingresa uno o varios códigos (SKU) separados por comas, espacios o saltos de línea.</p>
+                <textarea id="bulk-skus" rows="6" placeholder="Ej: 202823, 985757" style="width: 100%; background: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-primary); padding: 1rem; border-radius: 6px; font-family: var(--font-family); resize: vertical; margin-bottom: 1.5rem; outline: none;"></textarea>
+                <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+                    <button class="btn btn-secondary add-close">Cancelar</button>
+                    <button class="btn btn-primary" id="submit-add-btn">Importar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Status Modal -->
+    <div id="import-status-modal" class="modal" style="z-index: 2500;">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-body">
+                <h3 style="margin-bottom: 1rem;">Estado de Importación</h3>
+                <div id="import-status-list" style="max-height: 300px; overflow-y: auto; margin-bottom: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.5rem;">
+                    <!-- Items go here -->
+                </div>
+                <button class="btn btn-primary" id="close-import-btn" style="width: 100%; justify-content: center;" disabled>Procesando...</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div id="alert-modal" class="modal" style="z-index: 3000;">
+        <div class="modal-content" style="max-width: 400px; text-align: center;">
+            <div class="modal-body">
+                <i class="ph ph-info size-48" style="color: var(--brand-primary); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 0.5rem;" id="alert-title">Aviso</h3>
+                <p id="alert-message" style="color: var(--text-secondary); margin-bottom: 1.5rem;"></p>
+                <button class="btn btn-primary" id="alert-ok-btn" style="width: 100%; justify-content: center;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div id="confirm-modal" class="modal" style="z-index: 3000;">
+        <div class="modal-content" style="max-width: 400px; text-align: center;">
+            <div class="modal-body">
+                <i class="ph ph-warning-circle size-48" style="color: #f59e0b; margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 0.5rem;">Confirmación</h3>
+                <p id="confirm-message" style="color: var(--text-secondary); margin-bottom: 1.5rem;"></p>
+                <div style="display: flex; justify-content: space-between; gap: 1rem;">
+                    <button class="btn btn-secondary" id="confirm-cancel-btn" style="flex:1; justify-content: center;">Cancelar</button>
+                    <button class="btn btn-danger" id="confirm-ok-btn" style="flex:1; justify-content: center; background: #ef4444; color: white;">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
